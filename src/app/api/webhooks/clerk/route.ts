@@ -60,7 +60,6 @@ export async function POST(req: Request) {
   if (eventType === "user.created") {
     const { id, email_addresses, image_url, first_name, last_name, username } =
       evt.data;
-    const firstName = first_name || "";
     const user = {
       clerkId: id,
       email: email_addresses[0].email_address,
@@ -87,7 +86,6 @@ export async function POST(req: Request) {
   // UPDATE
   if (eventType === "user.updated") {
     const { id, image_url, first_name, last_name, username } = evt.data;
-    const firstName = first_name || "";
     const user = {
       firstName: first_name,
       lastName: last_name,

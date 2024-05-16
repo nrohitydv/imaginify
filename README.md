@@ -40,3 +40,4 @@ About Project
 $npx shadcn-ui@latest init 2.
 2.Apply metadata and setup font
 https://imaginify-beta-opal.vercel.app/
+AS8LPUzPFEM6RrjR
